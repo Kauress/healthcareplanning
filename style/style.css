@@ -49,15 +49,14 @@ color: #007591;
  .jumbotron-fluid{
    background-image: url("../img/background.jpg");
    width: 100%;
-   height:auto;
+   height: auto;
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
-   position: fixed;
  }
 .white-overlay{
   width: 80%;
-  height: auto;
+  height: 800px;
   padding: 15px;
   padding-bottom: 0px;
   background-color: #FFFFFF;
