@@ -316,6 +316,13 @@ form-inline {
     align-items: stretch;
   }
 }
+
+@media (max-width: 767px){
+  .form-inline .form-control {
+    display: block;
+    width: 100%;
+  }
+}
 /*colors
 
 #888375 (g1)
