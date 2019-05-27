@@ -126,26 +126,39 @@
          </div> <!-- end of row -->
           </div> <!-- end of container -->
 
+    <!-- Main form container -->
           <div class="container form-container">
             <div class="row">
+              <!-- start of main col-sm-9 -->
               <div class="col-sm-9">
            <h6 class="text-left form-heading" >Tell us who is allowed to make medical decisions for you.</h6>
            <h6 class="text-left form-heading">That person will be your  <span id="decision">healthcare decision maker.</span></h6>
+           <!-- start of nested row -->
            <div class="row" id="nested-form-row">
-            <div class="col-sm-12 nested col-sm-12-form">
-             <h7 class='orange-heading'><i class="fa fa-circle"></i> 1. Choose your main healthcare decision maker</h7>
+
+            <!-- -----------------------------------------
+                     nested col-sm-12 form section 1
+            ------------------------------------------ -->
+            <div class="col-sm-12 col-form" id="section-1">
+              <span class="fa-stack">
+                <!-- The icon that will wrap the number -->
+                  <span class="fa fa-circle fa-stack-2x"></span>
+                <!-- a strong element with the custom content, in this case a number -->
+                <strong class="fa-stack-1x">1</strong>
+            </span>
+             <h7 class='orange-heading'>Choose your main healthcare decision maker</h7>
              <form class="form-inline">
    <div class="form-group">
-      <label for="name">First Name</label>
-	  <input type="name" class="form-control" id="firstname">
+      <label for="firstname">First Name</label>
+	  <input type="text" class="form-control">
    </div>
    <div class="form-group">
-      <label for="name">Middle Name</label>
-	  <input type="text" class="form-control" id="middlename">
+      <label for="middlename">Middle Name</label>
+	  <input type="text" class="form-control">
  </div>
  <div class="form-group full-input">
-    <label for="name">Last Name</label>
-  <input type="text" class="form-control" id="lastname">
+    <label for="lastname">Last Name</label>
+  <input type="text" class="form-control" id= "lastname">
 </div>
 <div class="form-group full-input">
    <label for="address">Address</label>
@@ -154,84 +167,99 @@
 <div class="form-group city-row">
    <label for="name">City</label>
  <input type="text" class="form-control" id="name">
-   <label for="name">Nm</label>
+   <label for="state"class="state">State</label>
    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"></button>
    <div class="dropdown-menu">
      <a class="dropdown-item" href="AL">AL</a>
      <a class="dropdown-item" href="AK">AK</a>
      <a class="dropdown-item" href="AZ">AZ</a>
    </div>
-   <label for="name">Zip</label>
+   <label for="zip" class="zip">Zip</label>
  <input type="text" class="form-control" id="name" placeholder="" style="width:95px">
 </div>
 <div class="form-group">
    <label for="cellphone">Cell Phone</label>
- <input type="number" class="form-control" id="name" placeholder="">
+ <input type="text" class="form-control" id="name" placeholder="">
 </div>
 <div class="form-group">
    <label for="alternatephone">Alternate</label>
- <input type="number" class="form-control" id="middlename" placeholder="">
+ <input type="text" class="form-control" id="middlename" placeholder="">
 </div>
 </form>
-             </div> <!-- end of nested col-sm-12-form -->
+ </div> <!-- end of nested col-sm-12-form -->
 
-             <div class="col-sm-12 nested col-sm-12-form">
-              <h7 class="orange-heading"><i class="fa fa-circle"></i> 2. Choose upto two more alternate healthcare decision makers</h7>
+ <!-- -----------------------------------------
+          nested col-sm-12 form section 2
+ ------------------------------------------ -->
+             <div class="col-sm-12 nested col-form">
+               <span class="fa-stack">
+                 <!-- The icon that will wrap the number -->
+                   <span class="fa fa-circle fa-stack-2x"></span>
+                 <!-- a strong element with the custom content, in this case a number -->
+                 <strong class="fa-stack-1x">
+                     2
+                 </strong>
+             </span>
+              <h7 class="orange-heading">Choose upto two more alternate healthcare decision makers</h7>
               <p class="alternate-heading">FIRST ALTERNATE</p>
               <form class="form-inline">
         <div class="form-group">
-       <label for="name">First Name</label>
+       <label for="firstname">First Name</label>
  	  <input type="text" class="form-control" id="name" placeholder="">
     </div>
     <div class="form-group">
-       <label for="name">Middle Name</label>
+       <label for="middlename">Middle Name</label>
  	  <input type="text" class="form-control" id="middlename">
   </div>
   <div class="form-group full-input">
-     <label for="name">Last Name</label>
-   <input type="text" class="form-control" id="lastname">
+     <label for="lastname">Last Name</label>
+   <input type="text" class="form-control" id="lastname1">
  </div>
  <div class="form-group full-input">
     <label for="address">Address</label>
-  <input type="text" class="form-control" id="address">
+  <input type="text" class="form-control" id="address1">
  </div>
  <div class="form-group city-row">
-    <label for="name">City</label>
+    <label for="city">City</label>
   <input type="text" class="form-control" id="name">
-    <label for="name">Nm</label>
+    <label for="state" class="state">State</label>
     <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"></button>
     <div class="dropdown-menu">
       <a class="dropdown-item" href="AL">AL</a>
       <a class="dropdown-item" href="AK">AK</a>
       <a class="dropdown-item" href="AZ">AZ</a>
     </div>
-    <label for="name">Zip</label>
+    <label for="zip" class="zip">Zip</label>
   <input type="text" class="form-control" id="name" placeholder="" style="width:95px">
  </div>
  <div class="form-group">
     <label for="cellphone">Cell Phone</label>
-  <input type="number" class="form-control" id="name">
+  <input type="text" class="form-control" id="name">
  </div>
  <div class="form-group">
     <label for="alternatephone">Alternate</label>
-  <input type="number" class="form-control" id="middlename">
+  <input type="text" class="form-control" id="middlename">
  </div>
  </form>
   </div> <!-- end of nested col-sm-12-form -->
 
-  <div class="col-sm-12" class="nested col-sm-12-form">
+  <!-- -----------------------------------------
+           nested col-sm-12 form
+  ------------------------------------------ -->
+
+  <div class="col-sm-12 col-form">
    <p class="alternate-heading">SECOND ALTERNATE</p>
    <form class="form-inline" role="form">
 <div class="form-group">
-<label for="name">First Name</label>
+<label for="firstname">First Name</label>
 <input type="text" class="form-control" id="name">
 </div>
 <div class="form-group">
-<label for="name">Middle Name</label>
+<label for="middlename">Middle Name</label>
 <input type="text" class="form-control" id="middlename">
 </div>
 <div class="form-group full-input">
-<label for="name">Last Name</label>
+<label for="lastname">Last Name</label>
 <input type="text" class="form-control" id="lastname">
 </div>
 <div class="form-group full-input">
@@ -239,43 +267,62 @@
 <input type="text" class="form-control" id="address">
 </div>
 <div class="form-group city-row">
-<label for="name">City</label>
+<label for="city">City</label>
 <input type="text" class="form-control" id="name" >
-<label for="name">Nm</label>
+<label for="state"class="state">State</label>
 <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"></button>
 <div class="dropdown-menu">
 <a class="dropdown-item" href="AL">AL</a>
 <a class="dropdown-item" href="AK">AK</a>
 <a class="dropdown-item" href="AZ">AZ</a>
 </div>
-<label for="name">Zip</label>
+<label for="zip" class="zip">Zip</label>
 <input type="text" class="form-control" id="name"  style="width:95px">
 </div>
 <div class="form-group">
 <label for="cellphone">Cell Phone</label>
-<input type="number class="form-control" id="name" >
+<input type="text" class="form-control" id="name" >
 </div>
 <div class="form-group">
 <label for="alternatephone">Alternate</label>
-<input type="number" class="form-control" id="middlename">
+<input type="text" class="form-control" id="middlename">
 </div>
 </form>
    </div> <!-- end of nested col-sm-12-form -->
 
-   <div class="col-sm-12" class="nested col-sm-12-form">
-     <h7 class='orange-heading'><i class="fa fa-circle"></i> 3. <span style="color: #00759a">One more thing!</span> is there anyone else you want to include in your healthcare decision making?</h7>
+   <!-- -----------------------------------------
+            nested col-sm-12 form section 3
+   ------------------------------------------ -->
+   <div class="col-sm-12 col-form">
+     <span class="fa-stack">
+       <!-- The icon that will wrap the number -->
+         <span class="fa fa-circle fa-stack-2x"></span>
+       <!-- a strong element with the custom content, in this case a number -->
+       <strong class="fa-stack-1x"> 3 </strong>
+   </span>
+     <h7 class='orange-heading'><span style="color: #00759a">One more thing!</span> is there anyone else you want to include in your healthcare decision making?</h7>
      <p>List their names here so that your healthcare decision maker(s) will now whom to involve. Remember that only your healthcare decision maker(s) will be able to make final decisons.
      However, they can rely on information from others who are close to you to help in the decision-making process.</p>
      <form class="form-inline">
-       <div class="form-group full-input">
+       <div class="form-group full-input-2">
        <label for="additionalnames">Please seperate additional names by commas.</label>
        <input type="text" class="form-control" id="additionalnames">
        </div>
   </form>
     </div> <!-- end of nested col-sm-12-form -->
-    <div class="col-sm-12">
-   <h5 style="font-weight:900;margin-bottom:20px;">When do you want your healthcare decision maker to make decisons, and what decisions do you want them to make?</h5>
-   <h7 class='orange-heading'><i class="fa fa-circle"></i> 4. When do you want your healthcare decision maker(s) to be able to act on your behalf?</h7>
+    <!-- -----------------------------------------
+             nested col-sm-12 form section 4
+    ------------------------------------------ -->
+
+    <div class="col-sm-12 col-form">
+   <h6 class="text-left form-heading">When do you want your healthcare decision maker to make decisons, and what decisions do you want them to make?</h5>
+   <span class="fa-stack">
+     <!-- The icon that will wrap the number -->
+       <span class="fa fa-circle fa-stack-2x"></span>
+     <!-- a strong element with the custom content, in this case a number -->
+     <strong class="fa-stack-1x">4</strong>
+ </span>
+   <h7 class='orange-heading'>When do you want your healthcare decision maker(s) to be able to act on your behalf?</h7>
      <p class="checkbox-text">
 <input class="form-check-input" type="checkbox" id="checkbox1" value="option1">
 When my primary or attending physician and one other licensed member of my medical team determine that I do not have the capacity to appreciate the risks and
@@ -283,30 +330,27 @@ When my primary or attending physician and one other licensed member of my medic
 </p>
 <p class="checkbox-text" style="font-weight:900">-OR-</p>
 <p class="checkbox-text">
-<input class="form-check-input" type="checkbox" id="checkbox2" value="option1">
+<input class="form-check-input" type="checkbox" id="checkbox2" value="">
 My healthcare decision maker's authority is effective immediately, even though I have the capacity at this time.
 </p>
 </div> <!-- end of section 4 -->
 
+<!-- -----------------------------------------
+         nested col-sm-12 form section 5
+------------------------------------------ -->
 
-   <div class="col-sm-12" class="nested col-sm-12-form">
-     <h7 class='orange-heading'><i class="fa fa-circle"></i> 3. <span style="color: #00759a">One more thing!</span> is there anyone else you want to include in your healthcare decision making?</h7>
-     <p>List their names here so that your healthcare decision maker(s) will now whom to involve. Remember that only your healthcare decision maker(s) will be able to make final decisons.
-     However, they can rely on information from others who are close to you to help in the decision-making process.</p>
-     <form class="form-inline">
-       <div class="form-group full-input">
-       <label for="additionalnames">Please seperate additional names by commas.</label>
-       <input type="additionalnames" class="form-control" id="additionalnames" placeholder="">
-       </div>
-  </form>
-    </div> <!-- end of nested col-sm-12-form -->
-
-    <div class="col-sm-12" id="section-5">
-   <h7 class='orange-heading'><i class="fa fa-circle"></i> 5. Are there limitations on the healthcare decision maker(s) can make for you?</h7>
+    <div class="col-sm-12 col-form" id="section-5">
+      <span class="fa-stack">
+        <!-- The icon that will wrap the number -->
+          <span class="fa fa-circle fa-stack-2x"></span>
+        <!-- a strong element with the custom content, in this case a number -->
+        <strong class="fa-stack-1x">5</strong>
+    </span>
+   <h7 class='orange-heading'> Are there limitations on the healthcare decision maker(s) can make for you?</h7>
     <div class="row">
       <div class="col-sm-12">
      <p class="checkbox-text">
-<input class="form-check-input" type="checkbox" id="checkbox3" value="option1">
+<input class="form-check-input" type="checkbox" id="checkbox3" value="">
 No limitations. I want my healthcare decision maker to be able to make decisions about everything, including:
 </p>
 </div><!-- end of col-sm-12 -->
@@ -331,47 +375,51 @@ No limitations. I want my healthcare decision maker to be able to make decisions
 <div class="row">
   <div class="col-sm-12">
     <p class="checkbox-text">
-<input class="form-check-input" type="checkbox" id="checkbox4" value="option1">
+<input class="form-check-input" type="checkbox" id="checkbox4" value="">
  Specific limitations:
  </p>
     <form class="form-inline">
-      <div class="form-group full-input">
-      <label for="additionalnames">Please list any specific limiations here:</label>
-      <input type="additionalnames" class="form-control" id="listhere">
+      <div class="form-group full-input-2">
+      <label for="limitationslist">Please list any specific limiations here:</label>
+      <input type="text" class="form-control" id="listhere">
       </div>
  </form>
     </div> <!-- end of col-sm-12 -->
   </div> <!-- end of nested row -->
 </div> <!-- end of section 5 -->
-
-<div class="col-sm-12" id="section-6">
-<h7 class='orange-heading'><i class="fa fa-circle"></i> 6. Medical records: Are there people that you want to have access to your medical records after your death?</h7>
+<!-- -----------------------------------------
+         nested col-sm-12 form section 6
+------------------------------------------ -->
+<div class="col-sm-12 col-form" id="section-6">
+  <span class="fa-stack">
+    <!-- The icon that will wrap the number -->
+      <span class="fa fa-circle fa-stack-2x"></span>
+    <!-- a strong element with the custom content, in this case a number -->
+    <strong class="fa-stack-1x">6</strong>
+</span>
+<h7 class='orange-heading'> Medical records: Are there people that you want to have access to your medical records after your death?</h7>
 <div class="row">
   <div class="col-sm-2">
- <p class="checkbox-text">
-<input class="form-check-input" type="checkbox" id="checkbox5" value="yes">
-Yes
-</p>
-</div><!-- end of col-sm-2-->
+ <p><span><input type="checkbox" value=""><span> Yes</p>
+ </div><!-- end of col-sm-2-->
 <div class="col-sm-2">
-  <p class="checkbox-text">
- <input class="form-check-input" type="checkbox" id="checkbox6" value="no">
- No
- </p>
+ <p><span><input type="checkbox" value=""><span> No</p>
 </div><!-- end of col-sm-2 -->
 <div class="col-sm-8"></div>
 </div> <!-- end of nested row-->
 <div class="row">
  <div class="col-sm-12">
-   <p>If yes, please list here:</p>
-   <input type="text" class="form-control" id="yes-input">
-
+     <p>If yes please list them here:</p>
+     <input type="text" class="form-control" id="section-6-input">
    </div><!-- end of col-sm-12 -->
   </div><!-- end of nested row -->
 </div> <!-- end of section 6 -->
-
     </div> <!-- end of nested form-row -->
   </div> <!-- end of col-sm-9-->
+
+  <!-- -----------------------------------------
+        Side bar
+  ------------------------------------------ -->
 
      <div class="col-sm-3">
             <div class="row nested-row-col-3">
@@ -406,7 +454,7 @@ Yes
                   </div><!-- end of col-sm-12-->
                 </div> <!-- end of 2nd nested row -->
 
-                <div class="row">
+                <div class="row nested-row-col-3">
                   <div class="col-sm-12 note">
                     <div class="row">
                       <div class="col-sm-12 mind-heading">
@@ -422,6 +470,7 @@ Yes
                   </div> <!-- end of 2nd nested row -->
              </div><!-- end of col-sm-4 -->
             </div> <!-- end of row -->
+
             <button type="button" class="btn btn-default btn-block">Next</button>
             </div><!-- end of main container on page -->
 
