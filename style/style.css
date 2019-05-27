@@ -290,9 +290,12 @@ font-size: 12px;
   padding: 4px;
 }
 form-inline {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
+width: 100%;
+display: inline-flex;
+}
+.form-group{
+  display: inline-block;
+  flex-grow: 1;
 }
 
 .form-inline label {
