@@ -418,7 +418,10 @@ input[type=checkbox] {
    background: #606c46;
    cursor: pointer;
    }
-
+ .para-answer{
+   margin-top: 15px;
+  height: 130px;
+}
 
 
 /*colors
