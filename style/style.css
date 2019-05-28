@@ -180,7 +180,6 @@ padding: none;
 }
 .nested-row-col-3{
   margin-bottom: 20px;
-  margin-left: 10px;
 }
 #decision{
 color: #00759a;
@@ -219,7 +218,7 @@ text-decoration: underline;
 
 /* ---------------- FORM STYLES ---------------  */
 .col-form{
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .fa-circle{
@@ -231,7 +230,24 @@ color: orange;
 .orange-heading{
   font-weight: 900;
 }
+form-inline {
+width: 100%;
+display: inline-flex;
+}
+.form-group{
+  display: inline-block;
+  flex-grow: 1;
+  margin:10px;
+}
 
+.form-inline label {
+  margin: 5px 0px 5px 0px;
+}
+
+.form-inline input {
+  vertical-align: middle;
+  margin-right: 4px;
+}
 label{
   background-color:#E8E8E8;
   padding: 5px;
@@ -242,33 +258,21 @@ label{
   background-color: #F8F8F8;
   border: none;
 }
-.form-group{
-  margin:10px;
-}
-
-.form-control >.lastname{
-  width: 80%;
-}
-.full-input-2{
-  width:200%;
-}
-
-
 
 .alternate-heading{
   font-weight: 900;
   margin-top: 10px;
 font-size: 12px;
 }
+
+
 #additionalnames{
-  width:40%;
-  height: 105px;
+  height: 20vh;
+  width: 80%;
 }
-.dropdown-toggle{
-  margin:3px;
-}
-.state{
-  margin-left:10px;
+#limitationslist{
+  height: 20vh;
+  width: 80%
 }
 .checkbox-text{
   margin-top: 20px;
@@ -289,22 +293,13 @@ font-size: 12px;
 .checkbox2{
   padding: 4px;
 }
-form-inline {
-width: 100%;
-display: inline-flex;
-}
-.form-group{
-  display: inline-block;
-  flex-grow: 1;
+input[type=checkbox] {
+  transform: scale(1.2);
+  margin-top: 20px;
 }
 
-.form-inline label {
-  margin: 5px 0px 5px 0px;
-}
-
-.form-inline input {
-  vertical-align: middle;
-  margin-right: 4px;
+.checkbox-text{
+  margin-left: 10px;
 }
 
 /* Responsive media */
