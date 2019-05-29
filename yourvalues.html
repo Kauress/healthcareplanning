@@ -89,20 +89,20 @@
        <div class="col-sm-6 header-text">
          <div class = "center-block">
          <h5 class="text-left">2 of 5</h5>
-         <p class="text-left">What does quality of life mean to you? This is a very personal question. Think about the <span class="hilite">choices you would like to make</span> and how they will<br>
+         <p class="text-left">What does quality of life mean to you? This is a very personal question. Think about the <span class="hilite">choices you would like to make</span> and how they will
   <span class="underline">impact you and your loved ones.</span></p>
   </div><!-- end of center block -->
          </div> <!-- end of col-sm-6 -->
          <div class="col-sm-6">
-           <img src="img/yourvalues.jpg" class="your-img" alt="">
+           <img src="img/yourvalues.jpg" class="header-img" alt="">
          </div> <!-- end of col-sm-6 -->
            </div> <!-- end of row -->
       </div> <!-- end of container -->
 
-      <div class="container best-person">
+      <div class="container blue-container">
         <div class="row">
           <div class="col-sm1-12">
-           <h5 class="best-heading">Choices you would like to make</h5>
+           <h5 class="blue-container-heading">Choices you would like to make<i class="fa fa-times pull-right"></i></h5>
            <p>All medical treatment can come with potential benefits (desired outcomes) and potential burdens (unwanted outcomes). Only you can decide
            what treatment is right for you, based on your goals, personal values, and current health condition.</p>
          </div> <!-- end of col-sm-12 -->
@@ -112,7 +112,7 @@
         <div class="container my-voice">
         <div class="row">
       <div class="col-sm-12">
-         <h5 class="heading2 text-left">MY VOICE</h5>
+         <h5 class="voicetext text-left">MY VOICE</h5>
         </div><!-- end of col-sm-12 -->
          </div> <!-- end of row -->
           </div> <!-- end of container -->
@@ -137,8 +137,8 @@
                      <h7 class='orange-heading'> When you think about medical care that matters most to you, what is most important to you? <br>(Click on the button to slide left or right.)</h7>
                      <div class="row">
                        <div class="col-sm-12">
-                     <form class="range-field my-4 w-100">
-                        <input type="range" min="0" max="100" value = ""/>
+                     <form class="range-field my-4 w-75">
+                        <input type="range" min="0" max="100" value = "0"/>
                     </form>
                     </div><!-- end of col-sm-12 -->
                     </div><!-- end of nested row -->
@@ -212,10 +212,10 @@
                     <h7 class='orange-heading'>Do you have faith or spiritual practices that you want your medical team to know about?</h7>
                     <div class="row">
                         <div class="col-sm-2">
-                       <p><span><input type="checkbox" value=""><span class="checkbox-text"> Yes</p>
+                       <p><input type="checkbox" value=""><span class="checkbox-text">Yes</span></p>
                        </div><!-- end of col-sm-2-->
                       <div class="col-sm-2">
-                       <p><span><input type="checkbox" value=""><span class="checkbox-text"> No</p>
+                       <p><input type="checkbox" value=""><span class="checkbox-text">No<span></p>
                       </div><!-- end of col-sm-2 -->
                       <div class="col-sm-8"></div>
                       </div> <!-- end of nested row-->
@@ -229,7 +229,7 @@
 
                   <!-- 6th section -->
 
-                  <div class="col-sm-12 col-form">
+                  <div class="col-sm-12 col-form" id="values-section6">
                     <span class="fa-stack">
                       <!-- The icon that will wrap the number -->
                         <span class="fa fa-circle fa-stack-2x"></span>
@@ -239,10 +239,10 @@
                   <h7 class='orange-heading'>Do you want your medical team or loved ones to attempt to notify your faith or spiritual center?</h7>
                   <div class="row">
                       <div class="col-sm-2">
-                     <p><span><input type="checkbox" value=""><span class="checkbox-text"> Yes</p>
+                     <p><input type="checkbox" value=""><span class="checkbox-text">Yes<span></p>
                      </div><!-- end of col-sm-2-->
                     <div class="col-sm-2">
-                     <p><span><input type="checkbox" value=""><span class="checkbox-text"> No</p>
+                     <p><input type="checkbox" value=""><span class="checkbox-text">No</span></p>
                     </div><!-- end of col-sm-2 -->
                     <div class="col-sm-8"></div>
                     </div> <!-- end of nested row-->
@@ -256,6 +256,7 @@
                 <label for="number">Phone</label>
              <input type="text" class="form-control">
            </div>
+         </form>
                      </div><!-- end of col-sm-12 -->
                        </div><!-- end of nested row -->
                   </div> <!-- end of section 6-->
@@ -263,9 +264,7 @@
           <!-- button row -->
         </div> <!-- end of col-sm-9-->
 
-        <!-- -----------------------------------------
-              Side bar
-        ------------------------------------------ -->
+        <!-- Side bar  -->
 
            <div class="col-sm-3">
                       <div class="row nested-row-col-3">
@@ -289,13 +288,14 @@
                   <button class="btn btn-default btn-block previous-button">Previous</button>
                   </div> <!-- end of col-sm-4 -->
                   <div class="col-sm-8">
-                    <button type="button" class="btn btn-default btn-block" href="yourvalues.html">Next</button>
+                    <button type="button" class="btn btn-default btn-block">Next</button>
                     </div> <!-- end of -->
                   </div><!-- end of row -->
                   <div class="row">
                     <div class="col-sm-4"></div>
                     <div class="col-sm-5">
                       <button class="btn btn-default btn-block pull-right save-button">Save and Continue later</button>
+                       <div class="col-sm-3"></div>
                       </div><!-- end of col-sm-12 -->
                     </div> <!-- end of row -->
                   </div><!-- end of main container on page -->

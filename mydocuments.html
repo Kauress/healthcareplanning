@@ -89,28 +89,28 @@
        <div class="col-sm-6 header-text">
          <div class = "center-block">
          <h5 class="text-left">1 of 5</h5>
-         <p class="text-left">Who is the <span class="hilite">best person</span> to represent<br>
-  you, if there were a time when<br>you <span class="underline">couldn't make</span> decisions or voice<br>
+         <p class="text-left">Who is the <span class="hilite">best person</span> to represent
+  you, if there were a time when you <span class="underline">couldn't make</span> decisions or voice
   your medical preferences?</p>
   </div><!-- end of center block -->
          </div> <!-- end of col-sm-6 -->
          <div class="col-sm-6">
-           <img src="img/main_documents.jpg" class="your-img" alt="">
+           <img src="img/main_documents.jpg" class="header-img" alt="">
          </div> <!-- end of col-sm-6 -->
            </div> <!-- end of row -->
       </div> <!-- end of container -->
 
-      <div class="container best-person">
+      <div class="container blue-container">
         <div class="row">
           <div class="col-sm1-12">
-            <h5 class="text-left best-heading">Best Person</h5>
-              <p class="best-person-text text-left">What does "best person" mean? It means that you should select the person or people who will support the choices you make throughout this document.</p>
-              <ul class="best-person-text text-left">
-              <li class="best-person-text">For some people, that person os a family member. Others may think family members are too emotionally involved, so they would rather choose a friend or other loved one.</li>
-              <li class="best-person-text">Your healthcare decision maker cannot be:
-                    <ul class="best-person-text">
-                    <li class="best-person-text">Under the age of 18</li>
-                    <li class="best-person-text">An employee or owner of a health or residential facility where you live, or a member of your medical team, unless they are related to you.</li>
+            <h5 class="text-left blue-container-heading">Best Person<i class="fa fa-times pull-right"></i></h5>
+              <p class="blue-container-text text-left">What does "best person" mean? It means that you should select the person or people who will support the choices you make throughout this document.</p>
+              <ul class="blue-container-text text-left">
+              <li class="blue-container-text">For some people, that person os a family member. Others may think family members are too emotionally involved, so they would rather choose a friend or other loved one.</li>
+              <li class="blue-container-text">Your healthcare decision maker cannot be:
+                    <ul class="blue-container-text">
+                    <li class="blue-container-text">Under the age of 18</li>
+                    <li class="blue-container-text">An employee or owner of a health or residential facility where you live, or a member of your medical team, unless they are related to you.</li>
                     </ul>
                 </li>
                 </ul>
@@ -121,7 +121,7 @@
         <div class="container my-voice">
         <div class="row">
       <div class="col-sm-12">
-         <h5 class="heading2 text-left">MY VOICE</h5>
+         <h5 class="voicetext text-left">MY VOICE</h5>
         </div><!-- end of col-sm-12 -->
          </div> <!-- end of row -->
           </div> <!-- end of container -->
@@ -164,7 +164,7 @@
 <div class="form-group">
    <label for="city">City</label>
  <input type="text" class="form-control">
-   <select id="state" name="state">
+<select class="selectpicker">
      <option value="State">State</option>
      <option value="Alabama">Alabama</option>
      <option value="Alaska">Alaska</option>
@@ -221,7 +221,7 @@
        <option value="Wisconsin">Wisconsin</option>
        <option value="Wyoming">Wyoming</option>
      </select>
- <input type="text" class="form-control" id="name" placeholder="Zip" style="width:18%;">
+ <input type="text" class="form-control zip" placeholder="Zip" style="width:16%;">
 </div>
 <div class="form-group">
    <label for="cellphone">Cell Phone</label>
@@ -320,7 +320,7 @@
         <option value="Wisconsin">Wisconsin</option>
         <option value="Wyoming">Wyoming</option>
       </select>
-  <input type="text" class="form-control" id="name" placeholder="Zip" style="width:18%;">
+  <input type="text" class="form-control" id="name" placeholder="Zip" style="width:16%;">
  </div>
  <div class="form-group">
     <label for="cellphone">Cell Phone</label>
@@ -411,7 +411,7 @@
 <option value="Wisconsin">Wisconsin</option>
 <option value="Wyoming">Wyoming</option>
 </select>
-<input type="text" class="form-control" id="name" placeholder="Zip" style="width:18%;">
+<input type="text" class="form-control" id="name" placeholder="Zip" style="width:16%;">
 </div>
 <div class="form-group">
 <label for="cellphone">Cell Phone</label>
@@ -437,8 +437,8 @@
      However, they can rely on information from others who are close to you to help in the decision-making process.</p>
      <form class="form-inline">
        <div class="form-group">
-       <label for="additionalnames" style="height:20vh">Please seperate additional names by commas.</label>
-       <input type="text" class="form-control" id="additionalnames">
+       <label for="additionalnames" id="additionalnames-label">Please seperate additional names by commas.</label>
+       <input type="text" class="form-control" id="additionalnames-input">
        </div>
   </form>
     </div> <!-- end of nested col-sm-12-form -->
@@ -455,11 +455,11 @@
      <strong class="fa-stack-1x">4</strong>
  </span>
    <h7 class='orange-heading'>When do you want your healthcare decision maker(s) to be able to act on your behalf?</h7>
-   <p><span><input type="checkbox" value=""><span class="checkbox-text">When my primary or attending physician and one other licensed member of my medical team determine that I do not have the capacity to appreciate the risks and
+   <p><span class="checkbox-span"><input type="checkbox" value=""></span>When my primary or attending physician and one other licensed member of my medical team determine that I do not have the capacity to appreciate the risks and
  benefits of medical treatement. I understand that if my capacity returns, I will make my own medical decisions.
 </p>
 <p class="checkbox-text" style="font-weight:900">-OR-</p>
-  <p><span><input type="checkbox" value=""><span class="checkbox-text">My healthcare decision maker's authority is effective immediately, even though I have the capacity at this time.
+  <p><span class="checkbox-span"><input type="checkbox" value=""></span>My healthcare decision maker's authority is effective immediately, even though I have the capacity at this time.
 </p>
 </div> <!-- end of section 4 -->
 
@@ -477,7 +477,7 @@
    <h7 class='orange-heading'> Are there limitations on the healthcare decision maker(s) can make for you?</h7>
     <div class="row">
       <div class="col-sm-12">
- <p><span><input type="checkbox" value=""><span class="checkbox-text">No limitations. I want my healthcare decision maker to be able to make decisions about everything, including:
+ <p><span class="checkbox-span"><input type="checkbox" value=""></span>No limitations. I want my healthcare decision maker to be able to make decisions about everything, including:
 </p>
 </div><!-- end of col-sm-12 -->
 </div> <!-- end of nested row -->
@@ -500,11 +500,11 @@
 </div> <!-- end of nested row -->
 <div class="row">
   <div class="col-sm-12">
-    <p><span><input type="checkbox" value=""><span class="checkbox-text"> Specific limiations:</p>
+    <p><span class="checkbox-span"><input type="checkbox" value=""></span> Specific limiations:</p>
 
     <form class="form-inline">
       <div class="form-group">
-      <label for="limitationslist" style="height:20vh">Please list any specific limiations here:</label>
+      <label for="limitationslist" id="limitationslist-label">Please list any specific limitations here:</label>
       <input type="text" class="form-control" id="limitationslist">
       </div>
  </form>
@@ -524,10 +524,10 @@
 <h7 class='orange-heading'> Medical records: Are there people that you want to have access to your medical records after your death?</h7>
 <div class="row">
   <div class="col-sm-2">
- <p><span><input type="checkbox" value=""><span class="checkbox-text"> Yes</p>
+    <p ><span class="checkbox-span"><input type="checkbox" value=""></span>Yes</p>
  </div><!-- end of col-sm-2-->
 <div class="col-sm-2">
- <p><span><input type="checkbox" value=""><span class="checkbox-text"> No</p>
+ <p><span class="checkbox-span"><input type="checkbox" value=""></span> No</p>
 </div><!-- end of col-sm-2 -->
 <div class="col-sm-8"></div>
 </div> <!-- end of nested row-->

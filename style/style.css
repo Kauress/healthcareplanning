@@ -1,448 +1,604 @@
 
 
+/* ---------------------------
+     BASE STYLES
+   ------------------------------ */
 
-@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 
-html,body {
-    height:100%;
+/* font */
+
+@font-face {
+	font-family: "Avenir";
+	src: url(customfont/"avenirltstd-light.otf");
 }
-body{
-font-family: 'Nunito', sans-serif;
-color: #363534;
-overflow-x: hidden;
+
+
+/*@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');*/
+
+
+/* html and body */
+
+html,
+body {
+	height: 100%;
 }
+
+
+/* body */
+
+body {
+	font-family: "Avenir", sans-serif;
+	color: var(--bodyfontcolor);
+	overflow-x: hidden;
+}
+
+:root {
+	--maroon: #a71931;
+	--bodyfontcolor: #363534;
+	--myvoicebg: #e8e4d9;
+	--darkyellow: #ac9140;
+	--liteyellow: #e9ddb9;
+	--darkgreen: #606d47;
+	--litegreen: #d6ddc9;
+	--labelcolor: #dddedb;
+	--inputcolor: #e8e8e8;
+	--blue: #00759a;
+	--lastdivimarginbottom: 5%;
+	--headerimagesize: 103%;
+	--bqindents: 40px;
+	--warningtextsize: 125%;
+}
+
+
+/* --------------------------
+      EVERYONE LOVES BUTTONS
+  ------------------------- */
+
+.btn-default {
+	background-color: var(--maroon);
+	color: #FFFFFF;
+	text-transform: uppercase;
+	height: 52px;
+	font-weight: 600;
+	margin-top: 10px;
+}
+
+
+/* buttons */
+
+.previous-button {
+	background-color: #d7d7d7;
+}
+
+.save-button {
+	height: 45px;
+	background-color: #898375;
+}
+
 
 /* ---------------------------
    LOGO CONTAINER AND NAV STYLES
    ------------------------------ */
-#logo-container{
-  text-align: center;
-  height: auto;
-  margin-top: 20px;
-}
-.nav-container{
-  margin-top: 10px;
-  text-align: center;
+
+#logo-container {
+	text-align: center;
+	height: auto;
+	margin-top: 20px;
 }
 
-.nav li{
-  text-transform: uppercase;
-  font-weight:bold;-
-  font-size: 13px;
-  display: inline-flex;
+.nav-container {
+	margin-top: 10px;
+	text-align: center;
 }
-.nav-link{
-  color: #363534;
+
+.nav li {
+	text-transform: uppercase;
+	font-weight: bold;
+	- font-size: 13px;
+	display: inline-flex;
 }
+
+.nav-link {
+	color: var(--bodyfontcolor);
+}
+
+
+/* a styles */
+
 .nav a:hover {
-  color: #a71931;
-  border-bottom: 7px solid #a71931;
-  border-radius: 4px;
+	color: var(--maroon);
+	border-bottom: 7px solid var(--maroon);
+	border-radius: 4px;
 }
+
 a {
-   outline: 0;
+	outline: 0;
 }
-.active{
-  color: #a71931 !important;
+
+.active {
+	color: var(--maroon)!important;
 }
-.fa{
-  margin-right: 4px;
+
+
+/* font awesome styles */
+
+.fa {
+	margin-right: 4px;
 }
-.fa-bell, .fa-question-circle{
-  color: #ac9140;
+
+.fa-bell,
+.fa-question-circle {
+	color: var(--darkyellow);
 }
-.fa-user{
-color: #007591;
+
+.fa-user {
+	color: #007591;
 }
+
+
+/* Sub nav styles */
+
+.sub-nav-container {
+	text-align: center;
+	padding: none;
+}
+
+.sub-nav li {
+	text-transform: uppercase;
+	font-weight: bold;
+	list-style: none;
+	display: inline-flex;
+	font-size: 13px;
+}
+
+.nav-link {
+	color: var(--bodyfontcolor);
+}
+
+.sub-nav a:hover {
+	color: var(--maroon);
+}
+
+
+/* fwd slash styles */
+
+.slash {
+	color: #888375;
+	margin-left: 15px;
+}
+
+.slash-none {
+	color: #FFFFFF;
+	margin-left: 15px;
+}
+
 
 /*----------------------------------
- BACKGROUND-PIC
+       HOME PAGE BACKGROUND-PIC
  ---------------------------------  */
- .jumbotron-fluid{
-   background-image: url("../img/image001.jpg");
-   width: 100%;
-   height: auto;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
- }
-.white-overlay{
-  width: 80%;
-  height: auto;
-  padding: 15px;
-  padding-bottom: 0px;
-  background-color: #FFFFFF;
-  opacity: 0.85;
-  text-align: center;
+
+.jumbotron-fluid {
+	background-image: url("../img/image001.jpg");
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
-.embed-responsive{
-  width: 50%;
+
+.white-overlay {
+	width: 80%;
+	height: auto;
+	padding: 15px;
+	padding-bottom: 0px;
+	background-color: #FFFFFF;
+	opacity: 0.85;
+	text-align: center;
 }
-.heading{
-  padding: 20px;
-  font-weight: bold;
+
+.embed-responsive {
+	width: 50%;
 }
-.btn-default{
-  background-color: #a71931;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  height: 52px;
-  font-weight: bold;
-  width: 100%;
-  margin-top: 10px;
+
+.heading {
+	padding: 20px;
+	font-weight: bold;
 }
+
 
 /*---------------------------------------
-        mydocuments.html
+  MAIN RED, BLUE AND GREY info boxes
 ------------------------------------- */
 
-.sub-nav-container{
-text-align: center;
-padding: none;
-}
-.sub-nav li{
-  text-transform: uppercase;
-  font-weight:bold;
-  list-style: none;
-  display: inline-flex;
-  font-size: 13px;
-}
-.nav-link{
-  color: #363534;
-}
-.sub-nav a:hover {
-  color: #a71931;
+.header-container {
+	width: 91%
 }
 
-.slash{
-  color: #888375;
-  margin-left:15px;
-}
-.slash-none{
-  color: #FFFFFF;
-  margin-left:15px;
-}
-.header-container{
-  width:91%
-}
-.header-text{
-  padding-top: 20px;
-  background-color: #a71931;
-  color: #FFFFFF;
-  font-size: 20px;
-  font-weight: 900;
-}
-.center-block{
-   margin-left: 40px;
-   margin-top: 40px;
+.header-text {
+	padding-top: 20px;
+	background-color: var(--maroon);
+	color: #FFFFFF;
+	font-size: 1.1em;
+	font-weight: 900;
 }
 
-.hilite{
-  background-color: #00759a;
-  color: #ac9140;
-  text-decoration: underline;
-}
-.underline{
-  color: #ac9140;
-  text-decoration: underline;
-
-}
-.your-img{
-  width: 103%;
-  height: auto
-}
-.best-person{
-  margin-top: 10px;
-  /*width: 97.3%;*/
-  background-color: #00759a;
-  color: #FFFFFF;
-  padding-top: 20px;
-  padding-left: 30px;
-  padding-right: 40px;
-}
-.best-heading{
-  font-weight:900;
-}
-.best-person-text{
-  font-size: 15px;
-  padding-top:3px;
-}
-.my-voice{
-  margin-top: 10px;
-  /*width: 97.3%;*/
-  background-color: #e8e4d9;
-  height: 70px;
-}
-.heading2{
-  margin-top: 2.5%;
-  font-weight: 900;
-}
-/*-------------- form container ------------ */
-.form-container{
-  margin-top: 3%;
-  margin-bottom: 3%;
-}
-.form-group{
-  width: 90%;
-}
-.form-heading{
-  font-weight: 900;
-}
-.nested-row-col-3{
-  margin-bottom: 20px;
-}
-#decision{
-color: #00759a;
-text-decoration: underline;
-}
-.reminder-heading{
-  background-color: #606d47;
-  color: #FFFFFF;
+.center-block {
+	margin-left: 40px;
+	margin-top: 40px;
 }
 
-.reminder{
-  background-color: #d6ddc9;
-}
-.reminder-text{
-  margin-top: 10px;
-}
-.sub-reminder{
-  padding-top:7px;
+.hilite {
+	background-color: var(--blue);
+	color: var(--darkyellow);
+	text-decoration: underline;
 }
 
-.note-heading{
-  background-color: #888375;
-  color: #FFFFFF;
+.underline {
+	color: var(--darkyellow);
+	text-decoration: underline;
 }
-.note{
-  background-color: #e8e4d9;
+
+.header-img {
+	width: var(--headerimagesize);
+	height: auto;
 }
-.mind-heading{
-  background-color: #ac9140;
-  color: #FFFFFF;
+
+.blue-container {
+	margin-top: 10px;
+	background-color: var(--blue);
+	color: #FFFFFF;
+	padding-top: 20px;
+	padding-left: 30px;
+	padding-right: 40px;
 }
-.mind-text{
-  background-color:  #e9ddb9;
+
+.blue-container-heading {
+	font-weight: 900;
+}
+
+.blue-container-text {
+	font-size: 15px;
+	padding-top: 3px;
+}
+
+.my-voice {
+	margin-top: 10px;
+	background-color: var(--myvoicebg);
+	height: 70px;
+}
+
+.voicetext {
+	margin-top: 2.5%;
+	font-weight: 700;
+}
+
+
+/*---------------------------------------
+  SIDE PANEL STYLES
+------------------------------------- */
+
+#decision {
+	color: var(--blue);
+	text-decoration: underline;
+}
+
+.reminder-heading {
+	background-color: var(--darkgreen);
+	color: #FFFFFF;
+}
+
+.reminder {
+	background-color: var(--litegreen);
+}
+
+.reminder-text {
+	margin-top: 10px;
+}
+
+.sub-reminder {
+	padding-top: 7px;
+}
+
+.note-heading {
+	background-color: #888375;
+	color: #FFFFFF;
+}
+
+.note {
+	background-color: var(--myvoicebg);
+}
+
+.mind-heading {
+	background-color: var(--darkyellow);
+	color: #FFFFFF;
+}
+
+.mind-text {
+	background-color: var(--liteyellow);
+}
+
+
+/*--------------------------
+    MAIN FORM CONTAINER
+ ------------------------------- */
+
+.form-container {
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+.form-heading {
+	font-weight: 900;
+}
+
+.nested-row-col-3 {
+	margin-bottom: 20px;
 }
 
 
 /* ---------------- FORM STYLES ---------------  */
-.col-form{
-  margin-top: 20px;
+
+
+/* provides spacing between individual form sections */
+
+form-inline {
+	width: 100%;
+	display: inline-flex;
 }
 
-.fa-circle{
-color: orange;
-}
-.fa-stack-1x{
-  color: #FFFFFF;
-}
-.orange-heading{
-  font-weight: 900;
-}
-form-inline {
-width: 100%;
-display: inline-flex;
-}
-.form-group{
-  display: inline-block;
-  flex-grow: 1;
-  margin:10px;
+.form-group {
+	display: inline-block;
+	flex-grow: 1;
+	margin: 10px;
+	width: 100%;
+	margin-left: 4%;
 }
 
 .form-inline label {
-  margin: 5px 0px 5px 0px;
+	margin: 5px 0px 5px 0px;
 }
 
 .form-inline input {
-  vertical-align: middle;
-  margin-right: 4px;
+	vertical-align: middle;
+	margin-right: 4px;
 }
-label{
-  background-color:#E8E8E8;
-  padding: 5px;
-  width:120px;
+
+label {
+	background-color: var(--labelcolor);
+	padding: 6px;
+	width: 120px;
 }
 
 .form-control {
-  background-color: #F8F8F8;
-  border: none;
+	background-color: var(--inputcolor);
+	border: none;
 }
 
-.alternate-heading{
-  font-weight: 900;
-  margin-top: 10px;
-font-size: 12px;
+.col-form {
+	margin-top: 20px;
 }
 
 
-#additionalnames{
-  height: 20vh;
-  width: 80%;
-}
-#limitationslist{
-  height: 20vh;
-  width: 80%
-}
-.checkbox-text{
-  margin-top: 20px;
-  margin-left: 40px;
-}
-#listhere{
-    width:40%;
-    height: 80px;
+/* remove rounded input border */
+
+.form-control {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
 }
 
-#section-6{
-  margin-bottom: 30px;
+.fa-circle {
+	color: orange;
 }
-#section-6-input{
-  width:100%;
-  height: 70px;
+
+.fa-stack-1x {
+	color: #FFFFFF;
 }
-.checkbox2{
-  padding: 4px;
+
+.orange-heading {
+	font-weight: 600;
 }
+
 input[type=checkbox] {
-  transform: scale(1.2);
-  margin-top: 20px;
+	transform: scale(1.2);
+	margin-top: 20px;
 }
 
-.checkbox-text{
-  margin-left: 10px;
+.checkbox-span {
+	padding: 8px;
+	margin-left: 4%;
 }
 
-/* Responsive media */
 
-@media (max-width: 800px) {
-  .form-inline input {
-    margin: 8px 0;
-  }
+/* -----------------------------
+     mydocuments.html
+     ----------------------- */
 
-  .form-inline {
-    flex-direction: column;
-    align-items: stretch;
-  }
+.alternate-heading {
+	font-weight: 900;
+	margin-top: 1%;
+	font-size: 12px;
+  margin-left: 5%;
 }
 
-@media (max-width: 767px){
-  .form-inline .form-control {
-    display: block;
-    width: 100%;
-  }
+#additionalnames-label {
+	height: 21vh;
+	width: 23%;
 }
+
+#additionalnames-input {
+	height: 21vh;
+	width: 71%;
+}
+
+#limitationslist-label {
+	height: 21vh;
+	width: 23%;
+}
+
+#limitationslist {
+	height: 21vh;
+	width: 72%
+}
+
+#listhere {
+	width: 40%;
+	height: 80px;
+}
+
+#section-6 {
+	margin-bottom: var(--lastdivimarginbottom);
+}
+
+#section-6-input {
+	width: 100%;
+	height: 20vh;
+}
+
 
 /* ----------------------------------------------
    yourvalues.html
    ------------------------------------------  */
 
-   input[type=range]
-   {
-   -webkit-appearance:none;
-   width:100%;
-   background:transparent;
-   }
-   input[type=range]::-webkit-slider-thumb {
-   -webkit-appearance: none;
-   }
-   input[type=range]:focus {
-   outline: none;
-   /* Removes the blue border. */
-   }
-   /* Track Design */
-   input[type=range]::-webkit-slider-runnable-track{
-   width: 100%;
-   height: 15px;
-   cursor: pointer;
-   background: #007499;
-   border-radius: 4px;
-   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-   }
-   input[type=range]:focus::-webkit-slider-runnable-track {
-   background: #007499;
-   }
-   input[type=range]::-moz-range-track {
-   width: 600px;
-   height: 15px;
-   cursor: pointer;
-   background:#007499;
-   border-radius: 8px;
-   }
-   input[type=range]::-ms-track {
-   width: 600px;
-   height: 15px;
-   cursor: pointer;
-   background: transparent;
-   border-color: transparent;
-   border-width: 16px 0;
-   color: transparent;
-   }
-   input[type=range]::-ms-fill-lower {
-   background: #2a6495;
-   border: 0.2px solid #010101;
-   border-radius: 2.6px;
-   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-   }
-   input[type=range]:focus::-ms-fill-lower {
-   background: #3071a9;
-   }
-   input[type=range]::-ms-fill-upper {
-   background: #3071a9;
-   border: 0.2px solid #010101;
-   border-radius: 2.6px;
-   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-   }
-   input[type=range]:focus::-ms-fill-upper {
-   background: #367ebd;
-   }
-   /* Thumb design */
-   input[type=range]::-webkit-slider-thumb{
-   -webkit-appearance: none;
-   height: 25px;
-   width: 25px;
-   border-radius: 50%;
-   background:#606c46;
-   cursor: pointer;
-   margin-top:-5px;
-   /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
-   }
-   input[type=range]::-moz-range-thumb {
-   height: 25px;
-   width: 25px;
-   border-radius: 50%;
-   background: #606c46;
-   cursor: pointer;
-   }
-   /* All the same stuff for IE */
-   input[type=range]::-ms-thumb {
-   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-   height: 25px;
-   width: 25px;
-   border-radius: 50%;
-   background: #606c46;
-   cursor: pointer;
-   }
- .para-answer{
-   margin-top: 15px;
-  height: 130px;
+input[type=range] {
+	-webkit-appearance: none;
+	width: 100%;
+	background: transparent;
 }
-.previous-button{
-  color: #FFFFFF;
-  text-transform: uppercase;
-  height: 52px;
-  font-weight: bold;
-  width: 100%;
-  margin-top: 10px;
-  background-color: #d7d7d7;
+
+input[type=range]::-webkit-slider-thumb {
+	-webkit-appearance: none;
 }
-.save-button{
-  color: #FFFFFF;
-  text-transform: uppercase;
-  height: 52px;
-  font-weight: bold;
-  width: 100%;
-  margin-top: 10px;
-  background-color: #898375;
+
+input[type=range]:focus {
+	outline: none;
+	/* Removes the blue border. */
+}
+
+
+/* Track Design */
+
+input[type=range]::-webkit-slider-runnable-track {
+	width: 100%;
+	height: 15px;
+	cursor: pointer;
+	background: #007499;
+	border-radius: 4px;
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+	background: #007499;
+}
+
+input[type=range]::-moz-range-track {
+	width: 600px;
+	height: 15px;
+	cursor: pointer;
+	background: #007499;
+	border-radius: 8px;
+}
+
+input[type=range]::-ms-track {
+	width: 600px;
+	height: 15px;
+	cursor: pointer;
+	background: transparent;
+	border-color: transparent;
+	border-width: 16px 0;
+	color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+	background: #2a6495;
+	border: 0.2px solid #010101;
+	border-radius: 2.6px;
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+	background: #3071a9;
+}
+
+input[type=range]::-ms-fill-upper {
+	background: #3071a9;
+	border: 0.2px solid #010101;
+	border-radius: 2.6px;
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+	background: #367ebd;
+}
+
+
+/* Thumb design */
+
+input[type=range]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+	background: #606c46;
+	cursor: pointer;
+	margin-top: -5px;
+	/* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+}
+
+input[type=range]::-moz-range-thumb {
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+	background: #606c46;
+	cursor: pointer;
+}
+
+
+/* All the same stuff for IE */
+
+input[type=range]::-ms-thumb {
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+	background: #606c46;
+	cursor: pointer;
+}
+
+.para-answer {
+	margin-top: 15px;
+	height: 130px;
+}
+
+#values-section6 {
+	margin-bottom: var(--lastdivimarginbottom);
+}
+
+
+/* Responsive media */
+
+@media (max-width: 800px) {
+	.form-inline input {
+		margin: 8px 0;
+	}
+	.form-inline {
+		flex-direction: column;
+		align-items: stretch;
+	}
+}
+
+@media (max-width: 767px) {
+	.form-inline .form-control {
+		display: block;
+		width: 100%;
+	}
+}
+
+select {
+	height: 35px;
+	background-color: var(--labelcolor);
+	border: none;
+	margin-right: 0.5%;
 }
 
 
@@ -455,7 +611,6 @@ input[type=checkbox] {
  #ac9140 (y1)
  #e9ddb9  (y2)
  #00759a(Blue)
-
 slide range
 #606c46
 #007499
