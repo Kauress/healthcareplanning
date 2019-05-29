@@ -422,22 +422,22 @@ input[type=checkbox] {
 }
 
 #additionalnames-label {
-	height: 21vh;
+	height: 140px;
 	width: 23%;
 }
 
 #additionalnames-input {
-	height: 21vh;
+	height: 140px;
 	width: 71%;
 }
 
 #limitationslist-label {
-	height: 21vh;
+	height: 140px;
 	width: 23%;
 }
 
 #limitationslist {
-	height: 21vh;
+	height: 140px;
 	width: 72%
 }
 
