@@ -422,8 +422,10 @@ input[type=checkbox] {
 }
 
 #additionalnames-label {
+  padding-top: 10px;
 	height: 148px;
 	width: 23%;
+  text-align: center;
 }
 
 #additionalnames-input {
