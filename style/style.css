@@ -31,7 +31,7 @@ body {
 /* body */
 
 body {
-	font-family: "Avenir", Arial;
+	font-family: "Avenir", Arial, sans-serif;
 	color: var(--bodyfontcolor);
 	overflow-x: hidden;
 }
@@ -209,6 +209,9 @@ a {
 	font-weight: bold;
 }
 
+.p-div{
+  margin-top: 4%;
+}
 
 /*---------------------------------------
   MAIN RED, BLUE AND GREY info boxes
@@ -586,6 +589,7 @@ input[type=range]::-ms-thumb {
 
 /* Responsive media */
 
+/* Kindle */
 @media (max-width: 800px) {
 	.form-inline input {
 		margin: 8px 0;
@@ -594,15 +598,37 @@ input[type=range]::-ms-thumb {
 		flex-direction: column;
 		align-items: stretch;
 	}
+  .form-group {
+  	display: inline-block;
+  	margin: 10px;
+  	width: 85%;
+  	margin-left: 4%;
+  }
 }
 
-@media (max-width: 767px) {
+/*Ipad */
+@media (max-width: 768px) {
 	.form-inline .form-control {
 		display: block;
 		width: 100%;
 	}
+  .nested-row-col3 {
+  	margin-left: 10px;
+  }
+
 }
 
+/* IPhones, Androids and smaller fablets */
+@media(max-width: 575px){
+  .form-group {
+  	display: inline-block;
+  	flex-grow: 1;
+  	margin: 10px;
+  	width: 95%;
+  	margin-left: 4%;
+  }
+
+}
 select {
 	height: 35px;
 	background-color: var(--labelcolor);
