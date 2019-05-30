@@ -305,11 +305,15 @@ a {
 
 .sub-reminder {
 	padding-top: 7px;
+  font-weight: 600;
+  font-size: 1em;
+
 }
 
 .note-heading {
 	background-color: #888375;
 	color: #FFFFFF;
+  font-weight: 900;
 }
 
 .note {
@@ -587,6 +591,14 @@ input[type=range]::-ms-thumb {
 
 #values-section6 {
 	margin-bottom: var(--lastdivimarginbottom);
+}
+
+/* ---------------------
+        MY PLAN 1
+---------------------- */
+.plan1-bullet {
+  margin-left: 7%;
+  margin-bottom: 1%;
 }
 
 
