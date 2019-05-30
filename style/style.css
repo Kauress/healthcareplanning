@@ -214,6 +214,15 @@ a {
   margin-top: 4%;
 }
 
+/*--------------------
+   IMAGE TEXT
+   ------------------  */
+
+.image-text{
+  font-weight: 900;
+  font-size: 22px;
+}
+
 /*---------------------------------------
   MAIN RED, BLUE AND GREY info boxes
 ------------------------------------- */
