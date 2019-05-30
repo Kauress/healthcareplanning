@@ -10,20 +10,20 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="style/style.css">
-
     <title>Presbyterian Advance Healthcare Planning </title>
   </head>
   <body>
-  <div class='container-fluid' id="logo-container">
-  <div class='row'>
-  <div class='col-sm-12'>
-  <img src='img/logo.png' class="img-fluid" alt="">
+  <div class="container-fluid" id="logo-container">
+  <div class="row">
+  <div class="col-sm-12">
+  <img src="img/logo.png" class="img-fluid" alt="logo">
 </div><!-- end of col-sm-12-->
 </div> <!-- end of row -->
-</div><!-- end of container-fluid -->
+</div><!-- end of logo container-fluid -->
+
 <div class="container nav-container">
-<div class='row nav-row '>
-  <div class='col-sm-7 nav-col'>
+<div class= "row nav-row">
+  <div class="col-sm-7 nav-col">
     <ul class="nav">
      <li class="nav-item">
        <a class="nav-link" href="index.html">Home</a>
@@ -34,9 +34,9 @@
      <li class="nav-item">
        <a class="nav-link" href="#">My Shared Circle</a>
      </li>
-   </ul>
-  </div> <!-- end of col-sm-6 -->
-  <div class='col-sm-5 nav-col'>
+   </ul><!-- end of ul -->
+ </div> <!-- end of col-sm-7 -->
+  <div class="col-sm-5 nav-col">
     <ul class="nav">
      <li class="nav-item">
        <a class="nav-link" href="#"><i class='fa fa-bell'></i>Support</a>
@@ -47,15 +47,15 @@
      <li class="nav-item">
        <a class="nav-link" href="#"><i class='fa fa-user'></i>Jessica Jones</a>
      </li>
-   </ul>
-  </div> <!-- end of col-sm-6 -->
+   </ul><!--end of ul -->
+ </div> <!-- end of col-sm-5 -->
 </div> <!-- end of row -->
 </div><!-- end of container-fluid -->
 
   <div class="container-fluid">
    <div class="row">
    <div class="col-sm-12">
-     <h3 class=" heading text-center">Your Voice, Your Values, Your Plan - for  Your Healthcare</h3>
+     <h3 class="heading text-center">Your Voice, Your Values, Your Plan - for Your Healthcare</h3>
   </div> <!-- end of col-sm-12 -->
     </div> <!-- end of row -->
     </div><!-- end of container-fluid -->
@@ -79,10 +79,10 @@
          <li class="nav-item">
            <a class="nav-link" href="#">Your Plan 3 <span class="slash-none"> /</span></a>
          </li>
-       </ul>
+       </ul><!-- end of ul -->
        </div><!-- end of col-sm-12-->
     </div> <!-- end of row -->
-    </div><!-- end of container-fluid -->
+  </div><!-- end of sub-nav container-fluid -->
 
     <div class="container header-container">
      <div class="row" style="background-color:#a71931">
@@ -95,14 +95,14 @@
   </div><!-- end of center block -->
          </div> <!-- end of col-sm-6 -->
          <div class="col-sm-6">
-           <img src="img/main_documents.jpg" class="header-img" alt="">
+           <img src="img/main_documents.jpg" class="header-img" alt="people talking">
          </div> <!-- end of col-sm-6 -->
            </div> <!-- end of row -->
-      </div> <!-- end of container -->
+      </div> <!-- end of header pic container -->
 
       <div class="container blue-container">
         <div class="row">
-          <div class="col-sm1-12">
+          <div class="col-sm-12">
             <h5 class="text-left blue-container-heading">Best Person<i class="fa fa-times pull-right"></i></h5>
               <p class="blue-container-text text-left">What does "best person" mean? It means that you should select the person or people who will support the choices you make throughout this document.</p>
               <ul class="blue-container-text text-left">
@@ -111,9 +111,9 @@
                     <ul class="blue-container-text">
                     <li class="blue-container-text">Under the age of 18</li>
                     <li class="blue-container-text">An employee or owner of a health or residential facility where you live, or a member of your medical team, unless they are related to you.</li>
-                    </ul>
+                  </ul><!-- end of nested ul-->
                 </li>
-                </ul>
+              </ul><!--end of ul -->
          </div> <!-- end of col-sm-12 -->
          </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -124,7 +124,7 @@
          <h5 class="voicetext text-left">MY VOICE</h5>
         </div><!-- end of col-sm-12 -->
          </div> <!-- end of row -->
-          </div> <!-- end of container -->
+       </div> <!-- end of my-voice container -->
 
     <!-- Main form container -->
           <div class="container form-container">
@@ -150,20 +150,20 @@
              <form class="form-inline">
    <div class="form-group">
       <label for="firstname">First Name</label>
-	  <input type="text" class="form-control">
+	  <input type="text" class="form-control" id="firstname">
       <label for="middlename">Middle Name</label>
-	  <input type="text" class="form-control">
+	  <input type="text" class="form-control" id="middlename">
  </div>
 
  <div class="form-group">
     <label for="lastname">Last Name</label>
-  <input type="text" class="form-control">
+  <input type="text" class="form-control" id="lastname">
    <label for="address">Address</label>
  <input type="text" class="form-control">
 </div>
 <div class="form-group">
    <label for="city">City</label>
- <input type="text" class="form-control">
+ <input type="text" class="form-control" id="city">
 <select class="selectpicker">
      <option value="State">State</option>
      <option value="Alabama">Alabama</option>
@@ -221,16 +221,16 @@
        <option value="Wisconsin">Wisconsin</option>
        <option value="Wyoming">Wyoming</option>
      </select>
- <input type="text" class="form-control zip" placeholder="Zip" style="width:16%;">
+ <input type="text" class="form-control" placeholder="Zip" style="width:16%;">
 </div>
 <div class="form-group">
    <label for="cellphone">Cell Phone</label>
- <input type="text" class="form-control" placeholder="">
+ <input type="text" class="form-control" placeholder="" id="cellphone">
    <label for="alternatephone">Alternate</label>
- <input type="text" class="form-control" placeholder="">
+ <input type="text" class="form-control" placeholder="" id="alternatephone">
 </div>
 </form>
- </div> <!-- end of nested col-sm-12-form -->
+</div> <!-- end of section 1 -->
 
  <!-- -----------------------------------------
           nested col-sm-12 form section 2
@@ -248,21 +248,21 @@
               <p class="alternate-heading">FIRST ALTERNATE</p>
               <form class="form-inline">
     <div class="form-group">
-       <label for="firstname">First Name</label>
-     <input type="text" class="form-control">
-       <label for="middlename">Middle Name</label>
-     <input type="text" class="form-control">
+       <label for="firstname1">First Name</label>
+     <input type="text" class="form-control" id="firstname1">
+       <label for="middlename1">Middle Name</label>
+     <input type="text" class="form-control" id="middlename1">
   </div>
 
   <div class="form-group">
-     <label for="lastname">Last Name</label>
-   <input type="text" class="form-control">
-    <label for="address">Address</label>
-  <input type="text" class="form-control">
+     <label for="lastname1">Last Name</label>
+   <input type="text" class="form-control" id="lastname1">
+    <label for="address1">Address</label>
+  <input type="text" class="form-control"id="address1">
  </div>
  <div class="form-group">
-    <label for="city">City</label>
-  <input type="text" class="form-control">
+    <label for="city1">City</label>
+  <input type="text" class="form-control" id="city1">
     <select id="state" name="state">
       <option value="State">State</option>
       <option value="Alabama">Alabama</option>
@@ -320,16 +320,16 @@
         <option value="Wisconsin">Wisconsin</option>
         <option value="Wyoming">Wyoming</option>
       </select>
-  <input type="text" class="form-control" id="name" placeholder="Zip" style="width:16%;">
+  <input type="text" class="form-control" placeholder="Zip" style="width:16%;">
  </div>
  <div class="form-group">
-    <label for="cellphone">Cell Phone</label>
-  <input type="text" class="form-control" placeholder="">
-    <label for="alternatephone">Alternate</label>
-  <input type="text" class="form-control" placeholder="">
+    <label for="cellphone1">Cell Phone</label>
+  <input type="text" class="form-control" placeholder="" id="cellphone1">
+    <label for="alternatephone1">Alternate</label>
+  <input type="text" class="form-control" placeholder="" id="alternatephone1">
  </div>
  </form>
-  </div> <!-- end of nested col-sm-12-form -->
+</div> <!-- end of nested col-sm-12 -->
 
   <!-- -----------------------------------------
            nested col-sm-12 form
@@ -339,21 +339,21 @@
    <p class="alternate-heading">SECOND ALTERNATE</p>
    <form class="form-inline">
 <div class="form-group">
-<label for="firstname">First Name</label>
-<input type="text" class="form-control">
-<label for="middlename">Middle Name</label>
-<input type="text" class="form-control">
+<label for="firstname2">First Name</label>
+<input type="text" class="form-control" id="firstname2">
+<label for="middlename2">Middle Name</label>
+<input type="text" class="form-control" id="middlename2">
 </div>
 
 <div class="form-group">
-<label for="lastname">Last Name</label>
-<input type="text" class="form-control">
-<label for="address">Address</label>
-<input type="text" class="form-control">
+<label for="lastname2">Last Name</label>
+<input type="text" class="form-control" id="lastname2">
+<label for="address2">Address</label>
+<input type="text" class="form-control" id="address2">
 </div>
 <div class="form-group">
-<label for="city">City</label>
-<input type="text" class="form-control">
+<label for="city2">City</label>
+<input type="text" class="form-control" id="city2">
 <select id="state" name="state">
 <option value="State">State</option>
 <option value="Alabama">Alabama</option>
@@ -411,21 +411,21 @@
 <option value="Wisconsin">Wisconsin</option>
 <option value="Wyoming">Wyoming</option>
 </select>
-<input type="text" class="form-control" id="name" placeholder="Zip" style="width:16%;">
+<input type="text" class="form-control"  placeholder="Zip" style="width:16%;">
 </div>
 <div class="form-group">
-<label for="cellphone">Cell Phone</label>
-<input type="text" class="form-control" placeholder="">
-<label for="alternatephone">Alternate</label>
-<input type="text" class="form-control" placeholder="">
+<label for="cellphone2">Cell Phone</label>
+<input type="text" class="form-control" placeholder=""id="cellphone2">
+<label for="alternatephone2">Alternate</label>
+<input type="text" class="form-control" placeholder="" id="alternatephone2">
 </div>
 </form>
-   </div> <!-- end of nested col-sm-12-form -->
+</div> <!-- end of section 2 -->
 
    <!-- -----------------------------------------
             nested col-sm-12 form section 3
    ------------------------------------------ -->
-   <div class="col-sm-12 col-form">
+   <div class="col-sm-12 col-form" id="section 3">
      <span class="fa-stack">
        <!-- The icon that will wrap the number -->
          <span class="fa fa-circle fa-stack-2x"></span>
@@ -437,16 +437,16 @@
      However, they can rely on information from others who are close to you to help in the decision-making process.</p>
      <form class="form-inline">
        <div class="form-group">
-       <div id="additionalnames-label" style="background-color:#dddedb"><p>Please seperate additional names by commas.<p></div>
+      <label class="form-check-label" for="additionalnames-label" style="background-color:#dddedb"><p>Please seperate additional names by commas.<p></label
        <input type="text" class="form-control" id="additionalnames-input">
        </div>
   </form>
-    </div> <!-- end of nested col-sm-12-form -->
+</div> <!-- end of section 3 -->
     <!-- -----------------------------------------
              nested col-sm-12 form section 4
     ------------------------------------------ -->
 
-    <div class="col-sm-12 col-form">
+    <div class="col-sm-12 col-form" id="section 4">
    <h6 class="text-left form-heading">When do you want your healthcare decision maker to make decisons, and what decisions do you want them to make?</h5>
    <span class="fa-stack">
      <!-- The icon that will wrap the number -->
@@ -455,12 +455,20 @@
      <strong class="fa-stack-1x">4</strong>
  </span>
    <h7 class='orange-heading'>When do you want your healthcare decision maker(s) to be able to act on your behalf?</h7>
-   <p><span class="checkbox-span"><input type="checkbox" value=""></span>When my primary or attending physician and one other licensed member of my medical team determine that I do not have the capacity to appreciate the risks and
- benefits of medical treatement. I understand that if my capacity returns, I will make my own medical decisions.
-</p>
-<p class="checkbox-text" style="font-weight:900">-OR-</p>
-  <p><span class="checkbox-span"><input type="checkbox" value=""></span>My healthcare decision maker's authority is effective immediately, even though I have the capacity at this time.
-</p>
+   <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="healthcarechoice1" value="yes">
+    <label class="form-check-label" for="healthcarechoice1">When my primary or attending physician and one other licensed member of my medical team determine that I do not have the capacity to appreciate the risks and
+  benefits of medical treatement. I understand that if my capacity returns, I will make my own medical decisions.</label>
+   </div>
+
+<p style="font-weight:900; margin-left:10%">-OR-</p>
+
+<div class="form-check form-check-inline">
+ <input class="form-check-input" type="checkbox" id="healthcarechoice2" value="yes">
+ <label class="form-check-label" for="healthcarechoice2">My healthcare decision maker's authority is effective immediately, even though I have the capacity at this time.
+</label>
+</div>
+
 </div> <!-- end of section 4 -->
 
 <!-- -----------------------------------------
@@ -477,8 +485,10 @@
    <h7 class='orange-heading'> Are there limitations on the healthcare decision maker(s) can make for you?</h7>
     <div class="row">
       <div class="col-sm-12">
- <p><span class="checkbox-span"><input type="checkbox" value=""></span>No limitations. I want my healthcare decision maker to be able to make decisions about everything, including:
-</p>
+        <div class="form-check form-check-inline">
+         <input class="form-check-input" type="checkbox" id="limitationschoice" value="yes">
+         <label class="form-check-label" for="limitationschoice">No limitations. I want my healthcare decision maker to be able to make decisions about everything, including:</label>
+       </div>
 </div><!-- end of col-sm-12 -->
 </div> <!-- end of nested row -->
 <div class="row">
@@ -500,8 +510,10 @@
 </div> <!-- end of nested row -->
 <div class="row">
   <div class="col-sm-12">
-    <p><span class="checkbox-span"><input type="checkbox" value=""></span> Specific limiations:</p>
-
+    <div class="form-check form-check-inline">
+     <input class="form-check-input" type="checkbox" id="choiceYes" value="yes">
+     <label class="form-check-label" for="choiceYes"> Specific limitations</label>
+   </div>
     <form class="form-inline">
       <div class="form-group">
       <label for="limitationslist" id="limitationslist-label">Please list any specific limitations here:</label>
@@ -523,20 +535,16 @@
 </span>
 <h7 class='orange-heading'> Medical records: Are there people that you want to have access to your medical records after your death?</h7>
 <div class="row">
-  <div class="col-sm-2">
-    <p ><span class="checkbox-span"><input type="checkbox" value=""></span>Yes</p>
- </div><!-- end of col-sm-2-->
-<div class="col-sm-2">
- <p><span class="checkbox-span"><input type="checkbox" value=""></span> No</p>
-</div><!-- end of col-sm-2 -->
-<div class="col-sm-8"></div>
-</div> <!-- end of nested row-->
-<div class="row">
- <div class="col-sm-12">
-     <p>If yes please list them here:</p>
-     <input type="text" class="form-control" id="section-6-input">
-   </div><!-- end of col-sm-12 -->
-  </div><!-- end of nested row -->
+  <div class="col-sm-12">
+    <div class="form-check form-check-inline">
+     <input class="form-check-input" type="checkbox" id="choice1" value="yes">
+     <label class="form-check-label" for="choice1">Yes</label>
+     <input class="form-check-input" type="checkbox" id="choice2" value="yes">
+     <label class="form-check-label" for="choice2">No</label>
+   </div>
+</div><!-- end of col-sm-12-->
+</div><!-- end of nested row -->
+
 </div> <!-- end of section 6 -->
     </div> <!-- end of nested form-row -->
   </div> <!-- end of col-sm-9-->
@@ -546,7 +554,7 @@
   ------------------------------------------ -->
 
      <div class="col-sm-3">
-            <div class="row nested-row-col-3">
+            <div class="row nested-row-col3">
                <div class="col-sm-12 reminder">
                  <div class="row">
                    <div class="col-sm-12 reminder-heading">
@@ -563,7 +571,7 @@
                  </div><!-- end of col-sm-12-->
               </div> <!-- end of nested row -->
 
-              <div class="row nested-row-col-3">
+              <div class="row nested-row-col3">
                 <div class="col-sm-12 note">
                   <div class="row">
                     <div class="col-sm-12 note-heading">
@@ -578,7 +586,7 @@
                   </div><!-- end of col-sm-12-->
                 </div> <!-- end of 2nd nested row -->
 
-                <div class="row nested-row-col-3">
+                <div class="row nested-row-col3">
                   <div class="col-sm-12 note">
                     <div class="row">
                       <div class="col-sm-12 mind-heading">
@@ -592,8 +600,8 @@
                        </div><!-- end of row -->
                     </div><!-- end of col-sm-12-->
                   </div> <!-- end of 2nd nested row -->
-             </div><!-- end of col-sm-4 -->
-            </div> <!-- end of row -->
+             </div><!-- end of col-sm-3 -->
+           </div> <!-- end of main container row -->
 
             <button type="button" class="btn btn-default btn-block" href="yourvalues.html">Next</button>
             </div><!-- end of main container on page -->
