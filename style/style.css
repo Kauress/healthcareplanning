@@ -95,11 +95,16 @@ body {
 	margin-top: 10px;
 	text-align: center;
 }
+#nav-line{
+  width: 100%;
+  border-bottom: 2px solid #e8e4d9;
+  opacity: 0.5
 
+}
 .nav li {
 	text-transform: uppercase;
 	font-weight: bold;
-	- font-size: 13px;
+	font-size: 13px;
 	display: inline-flex;
 }
 
@@ -168,7 +173,7 @@ a {
 /* fwd slash styles */
 
 .slash {
-	color: #888375;
+	color:  #e8e4d9;
 	margin-left: 15px;
 }
 
@@ -329,12 +334,22 @@ a {
 	background-color: var(--myvoicebg);
 }
 
+.note-text{
+  margin-top: 10px;
+}
+.mind1{
+  background-color: var(--liteyellow);
+}
+.mind{
+  background-color: var(--darkyellow);
+}
 .mind-heading {
 	background-color: var(--darkyellow);
 	color: #FFFFFF;
 }
 
 .mind-text {
+  margin-top: 10px;
 	background-color: var(--liteyellow);
 }
 
@@ -611,6 +626,14 @@ input[type=range]::-ms-thumb {
 }
 
 
+/*----------------------
+  MY PLAN 3
+----------------------- */
+
+.here-link{
+  color:#00759a;
+  text-decoration: underline;
+}
 /* Responsive media */
 
 /* Kindle */
@@ -636,8 +659,13 @@ input[type=range]::-ms-thumb {
 		display: block;
 		width: 100%;
 	}
-  .nested-row-col3 {
-  	margin-left: 10px;
+
+  input[type=range] {
+  	-webkit-appearance: none;
+  	width: 80%;
+  	background: transparent;
+    text-align: center;
+
   }
 
 }
