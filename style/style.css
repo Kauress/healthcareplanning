@@ -435,6 +435,7 @@ label {
 	font-weight: 600;
 }
 
+
 input[type=checkbox] {
 	transform: scale(1.2);
 }
@@ -487,6 +488,14 @@ input[type=checkbox] {
 	height: 80px;
 }
 
+#peoplelist-label{
+ margin-top: 10px;
+ margin-left: 4%;
+}
+#peoplelist {
+	height: 148px;
+	width: 85%
+}
 #section-6 {
 	margin-bottom: var(--lastdivimarginbottom);
 }
@@ -498,6 +507,17 @@ input[type=checkbox] {
 
 #zip1, #zip2, #zip3{
   width: 13%;
+}
+
+select {
+	height: 35px;
+	background-color: var(--labelcolor);
+	border: none;
+	margin-right: 0.5%;
+}
+.white-span{
+  font-weight: 900;
+  text-decoration: underline;
 }
 /* ----------------------------------------------
    yourvalues.html
@@ -634,6 +654,11 @@ input[type=range]::-ms-thumb {
   color:#00759a;
   text-decoration: underline;
 }
+
+#plan3-section5{
+  margin-bottom: 4%;
+}
+
 /* Responsive media */
 
 /* Kindle */
@@ -681,13 +706,19 @@ input[type=range]::-ms-thumb {
   }
 
 }
-select {
-	height: 35px;
-	background-color: var(--labelcolor);
-	border: none;
-	margin-right: 0.5%;
-}
 
+/* iphone 5 */
+@media (max-width: 320px) {
+   #additionalnames-label {
+    padding-top: 10px;
+  	height: 148px;
+  	width: 30%;
+  }
+  #limitationslist-label {
+  	height: 148px;
+  	width: 30%;
+  }
+}
 
 /*colors
 
