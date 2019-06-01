@@ -1,5 +1,4 @@
 
-
 /* ---------------------------
      BASE STYLES
    ------------------------------ */
@@ -389,7 +388,7 @@ a {
 
 .form-container {
 	margin-top: 3%;
-	margin-bottom: 3%;
+	margin-bottom: 6%;
 }
 
 .form-heading {
@@ -472,9 +471,12 @@ label {
 
 .orange-heading {
 	font-weight: 600;
+
 }
 
-
+.newline{
+  margin-left: 4%;
+}
 input[type=checkbox] {
 	transform: scale(1.2);
 }
