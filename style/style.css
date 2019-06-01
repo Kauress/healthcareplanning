@@ -118,7 +118,7 @@ body {
 .nav a:hover {
 	color: var(--maroon);
 	border-bottom: 7px solid var(--maroon);
-	border-radius: 4px;
+  border-top-right-radius: 25px;
 }
 
 a {
@@ -215,9 +215,18 @@ a {
 	font-weight: bold;
 }
 
-.p-div{
-  margin-top: 4%;
+
+#index-text{
+  margin-top: 30px;
+  padding: 25px;
 }
+.fa-chevron-right{
+  font-size: 20px;
+}
+.fa-chevron-left{
+  font-size: 20px;
+}
+
 
 /*--------------------
    IMAGE TEXT
@@ -233,7 +242,9 @@ a {
 ------------------------------------- */
 
 .header-container {
-	width: 91%
+	width: 90%;
+  border-left: 1px solid var(--maroon);
+  border-radius: 3px;
 }
 
 .header-text {
@@ -251,18 +262,20 @@ a {
 
 .hilite {
 	background-color: var(--blue);
-	color: var(--darkyellow);
+	color:#ffff7f;
 	text-decoration: underline;
 }
 
 .underline {
-	color: var(--darkyellow);
+	color:  #ffff7f;
 	text-decoration: underline;
 }
 
 .header-img {
 	width: var(--headerimagesize);
-	height: auto;
+	height: 100%;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
 
 .blue-container {
@@ -272,6 +285,7 @@ a {
 	padding-top: 20px;
 	padding-left: 30px;
 	padding-right: 40px;
+  border-radius: 3px;
 }
 
 .blue-container-heading {
@@ -287,6 +301,7 @@ a {
 	margin-top: 10px;
 	background-color: var(--myvoicebg);
 	height: 70px;
+  border-radius: 3px;
 }
 
 .voicetext {
@@ -307,10 +322,13 @@ a {
 .reminder-heading {
 	background-color: var(--darkgreen);
 	color: #FFFFFF;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
 .reminder {
 	background-color: var(--litegreen);
+  border-radius: 3px;
 }
 
 .reminder-text {
@@ -328,10 +346,14 @@ a {
 	background-color: #888375;
 	color: #FFFFFF;
   font-weight: 900;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
 .note {
-	background-color: var(--myvoicebg);
+  background-color: var(--myvoicebg);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
 
 .note-text{
@@ -339,18 +361,25 @@ a {
 }
 .mind1{
   background-color: var(--liteyellow);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
 .mind{
   background-color: var(--darkyellow);
+  border-radius: 3px;
 }
 .mind-heading {
 	background-color: var(--darkyellow);
 	color: #FFFFFF;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+
 }
 
 .mind-text {
   margin-top: 10px;
-	background-color: var(--liteyellow);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
 
 
@@ -377,6 +406,7 @@ a {
 
 /* provides spacing between individual form sections */
 
+
 form-inline {
 	width: 100%;
 	display: inline-flex;
@@ -390,19 +420,27 @@ form-inline {
 	margin-left: 4%;
 }
 
+
 .form-inline label {
 	margin: 5px 0px 5px 0px;
+
 }
 
 .form-inline input {
 	vertical-align: middle;
 	margin-right: 4px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
+
+
 
 label {
 	background-color: var(--labelcolor);
 	padding: 6px;
 	width: 120px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 
 .form-control {
@@ -412,6 +450,7 @@ label {
 
 .col-form {
 	margin-top: 20px;
+  padding-right: 5%;
 }
 
 
@@ -456,7 +495,7 @@ input[type=checkbox] {
 
 .alternate-heading {
 	font-weight: 900;
-	margin-top: 1%;
+	margin-bottom: -0.5%;
 	font-size: 12px;
   margin-left: 5%;
 }
@@ -465,7 +504,7 @@ input[type=checkbox] {
   padding-top: 10px;
 	height: 148px;
 	width: 25%;
-  text-align: center;
+  text-align: left;
 }
 
 #additionalnames-input {
@@ -476,6 +515,7 @@ input[type=checkbox] {
 #limitationslist-label {
 	height: 148px;
 	width: 25%;
+  text-align: left;
 }
 
 #limitationslist {
@@ -494,8 +534,10 @@ input[type=checkbox] {
 }
 #peoplelist {
 	height: 148px;
-	width: 85%
+	width: 85%;
+  border-radius: 3px;
 }
+
 #section-6 {
 	margin-bottom: var(--lastdivimarginbottom);
 }
@@ -631,6 +673,7 @@ input[type=range]::-ms-thumb {
 .para-answer {
 	margin-top: 15px;
 	height: 130px;
+  border-radius: 3px;
 }
 
 #values-section6 {
