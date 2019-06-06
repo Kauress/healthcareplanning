@@ -105,6 +105,7 @@ body {
 	font-weight: bold;
 	font-size: 13px;
 	display: inline-flex;
+
 }
 
 .nav-link {
@@ -117,7 +118,9 @@ body {
 .nav a:hover {
 	color: var(--maroon);
 	border-bottom: 7px solid var(--maroon);
-  border-top-right-radius: 25px;
+  /*border-top-right-radius: 25px;*/
+  /*background-color: var(--maroon);*/
+  /*color: #FFFFFF;*/
 }
 
 a {
@@ -318,11 +321,13 @@ a {
 	text-decoration: underline;
 }
 
+
 .reminder-heading {
 	background-color: var(--darkgreen);
 	color: #FFFFFF;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
+
 }
 
 .reminder {
@@ -331,14 +336,13 @@ a {
 }
 
 .reminder-text {
-	margin-top: 10px;
+  padding: 15px;
 }
 
 .sub-reminder {
 	padding-top: 7px;
   font-weight: 600;
   font-size: 1em;
-
 }
 
 .note-heading {
@@ -356,12 +360,14 @@ a {
 }
 
 .note-text{
-  margin-top: 10px;
+  padding: 15px;
 }
 .mind1{
   background-color: var(--liteyellow);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
+  padding: 7px;
+
 }
 .mind{
   background-color: var(--darkyellow);
